@@ -10,21 +10,31 @@
             <h1>Formulaire d'inscription</h1>
             <h2>Votre compte configuré en 2 minutes !</h2>
         </div>
-        <form action="/ma_page_de_traitement.txt" method="post">
-            <ul>
-                <li>
+        <form method="get">
+            <fieldset>
+                <legend>Etat civil</legend>
                     <label for="name">Nom :</label>
                     <input type="text" id="name" name="user_name" />
-                </li>
-                <li>
+                    <br>
                     <label for="1stname">Prénom :</label>
                     <input type="text" id="1stname" name="user_1stname" />
-                </li>
-                <li>
+                    <br>
                     <label for="birthday">Date de naissance</label>
                     <input type="date" id="birthday" name="user_birthday" />
-                </li>
-            </ul>
+            </fieldset>
+            <fieldset>
+                <legend>Informations de contact</legend>
+                    <label for="e_mail">Adresse mail :</label>
+                    <input type="email" id="e_mail" name="user_email" />
+                    <br>
+                    <label for="phone">Téléphone :</label>
+                    <input type="tel" id="phone" name="user_phone" />
+            </fieldset>
+            <fieldset>
+                    <button type="button">X</button> J'accepte les <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">conditions d'utilisation</a>
+                    <br>
+                    <button type="submit">S'inscrire</button>
+            </fieldset>
         </form>
     </body>
 </html>
